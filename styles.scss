@@ -1,0 +1,448 @@
+$primaryFont: Montserrat;
+$headingFont: Merriweather;
+$primaryColour: #2F5C7C;
+$hoverBackground: #c0ced7;
+$secondaryColour: #FFFFFF;
+$facebookColour: #2E3C7E;
+$twitterColour: #3BA6E5;
+$subheadingColour: #B7BDC1;
+$darkestBackground: #2E4D63;
+
+* {
+  box-sizing: border-box;
+  a {
+    text-decoration: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  .navHeader{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .navSocials {
+      margin: 0 3px;
+
+      .icon {
+        font-size: 14px;
+        border-radius: 50%;
+        padding: 10px;
+        text-align: center;
+        color: #FFFFFF;
+
+        &:hover {
+          background-color: $hoverBackground;
+          color: $primaryColour;
+        }
+      }
+
+      .fa-facebook-f {
+        background-color: $facebookColour;
+        padding: 10px 12px;
+      }
+
+      .fa-twitter {
+        background-color: $twitterColour;
+      }
+
+      .fa-search {
+        background-color: $primaryColour;
+      }
+    }
+  }
+
+  .navLinks {
+    display: flex;
+    justify-content: space-between;
+    font-family: $primaryFont;
+    margin: 10px 0;
+
+    .selected {
+      color: RGBA(255,255,255,0.47)
+    }
+
+    a {
+      color: $secondaryColour;
+
+      &:hover {
+        color: RGBA(255,255,255,0.47)
+      }
+    }
+
+  }
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  background-image: linear-gradient(
+                  rgba(0,0,0,0.2),
+                  rgba(0,0,0,0.2)
+  ),url("assets/images/IMG_5215.png");
+  background-size: cover;
+
+  h3 {
+    font-family: $primaryFont;
+    margin: 5px 0;
+    text-transform: uppercase;
+    color: $secondaryColour;
+    font-variation-settings: 'wght' 200;
+    letter-spacing: 1px;
+    font-size: 22px;
+  }
+
+  h1 {
+    color: $secondaryColour;
+    font-family: $headingFont;
+    font-size: 52px;
+    text-align: center;
+  }
+
+  i {
+    background-color: $primaryColour;
+    color: $secondaryColour;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 20px 23px;
+    margin-bottom: 40px;
+
+    &:hover {
+      background-color: $hoverBackground;
+      color: $primaryColour;
+    }
+  }
+
+}
+
+.button {
+  font-family: $primaryFont;
+  height: 30px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-variation-settings: 'wght' 300;
+  text-transform: uppercase;
+  margin-right: 3px;
+
+  i {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    background-color: $hoverBackground;
+    color: $primaryColour;
+  }
+}
+
+.buttonDarkTheme {
+  background-color: $primaryColour;
+  color: $secondaryColour;
+}
+
+.buttonLightTheme {
+  background-color: $secondaryColour;
+}
+
+#welcome {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+
+    img {
+      margin-right: 25px;
+    }
+
+    div {
+      margin-left: 25px;
+
+      h5 {
+        font-size: 20px;
+        color: $subheadingColour;
+        text-transform: uppercase;
+        font-family: $primaryFont;
+        font-variation-settings: 'wght' 300;
+      }
+
+      h4 {
+        font-family: $headingFont;
+        color: $primaryColour;
+        font-size: 33px;
+        line-height: 52px;
+      }
+
+      p {
+        line-height: 32px;
+        font-family: $primaryFont;
+        font-size: 17px;
+        margin: 30px 0;
+      }
+    }
+  }
+
+  a {
+    width: 130px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.news {
+  background-color: $primaryColour;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+
+  .newsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    h2 {
+      font-family: $headingFont;
+      color: $secondaryColour;
+      font-size: 38px;
+    }
+
+    .carouselControls {
+      display: flex;
+
+      i {
+        color: $secondaryColour;
+        margin-left: 10px;
+        font-size: 40px;
+
+        &:hover {
+          cursor: pointer;
+          color: $hoverBackground;
+        }
+      }
+    }
+  }
+
+  aside {
+    display: flex;
+    justify-content: space-between;
+
+    article {
+      width: 550px;
+      overflow: hidden;
+
+      .carouselBanner {
+        position: relative;
+
+        img {
+          width: 550px;
+          height: 200px;
+          object-fit: cover;
+        }
+
+        h4 {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          color: $secondaryColour;
+          margin: 0;
+          font-family: $primaryFont;
+          text-transform: uppercase;
+        }
+      }
+
+      .carouselDetails {
+        margin-top: -5px;
+        padding: 10px;
+        background-color: $secondaryColour;
+
+        h5 {
+          margin: 0;
+          text-transform: uppercase;
+          font-family: $primaryFont;
+          color: $subheadingColour;
+        }
+      }
+
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+
+  a {
+    margin: 40px auto;
+    width: 150px;
+    text-align: center;
+  }
+}
+
+footer {
+  background-color: $darkestBackground;
+  color: $secondaryColour;
+  font-family: $primaryFont;
+  padding: 50px 0;
+
+  hr {
+    margin: 50px 0;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 30px;
+    font-size: 15px;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      display: block;
+
+      &:hover{
+        color: $hoverBackground;
+      }
+    }
+
+    ul {
+      column-count: 3;
+      margin: 0;
+
+      li{
+        list-style: none;
+        padding-left: 25px;
+        background-image: url(arrow.svg);
+        background-position: 5px 5px;
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+
+  a {
+    color: $secondaryColour;
+  }
+
+  .footNote {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    a{
+      margin-right: 20px;
+    }
+  }
+}
+
+  @font-face {
+    font-family: "Montserrat";
+    src: url("assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+  }
+
+  @font-face {
+    font-family: "Merriweather";
+    src: url("assets/fonts/Merriweather/Merriweather-Regular.ttf")
+  }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .navHeader {
+    flex-flow: column-reverse;
+
+    img {
+      margin: 10px;
+    }
+  }
+  .navLinks {
+    display: none !important;
+  }
+
+  #welcome {
+    padding: 15px 0;
+
+    .wrapper {
+      flex-flow:column;
+
+      img {
+        width: 100%;
+      }
+
+      div {
+        margin: 0 15px;
+      }
+    }
+  }
+
+
+  .news {
+
+    .newsHeader {
+      flex-flow:column;
+      align-items: center !important;
+
+      .carouselControls {
+        i {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    aside {
+      justify-content: center;
+    }
+  }
+
+  footer {
+    section {
+      flex-flow: column;
+
+      ul {
+        column-count: 1;
+        padding: 0;
+      }
+
+      div {
+        margin: 20px 0;
+      }
+    }
+
+    .footNote {
+      flex-flow: column;
+
+      div {
+        display: flex;
+        flex-flow: column;
+      }
+    }
+  }
+
+}

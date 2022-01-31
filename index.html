@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+
+    <script src="index.js" defer></script>
+
+    <title>Example Site</title>
+</head>
+<body>
+
+    <nav class="container">
+        <div class="navHeader">
+            <div>
+                <img src="assets/Logo.png" alt="logo"/>
+            </div>
+            <div class="navSocials">
+                <a href="" class="button buttonDarkTheme">Join us</a>
+                <a href="" class="button buttonDarkTheme">
+                    <i class="fas fa-phone fa-flip-horizontal"></i>
+                    Contact us
+                </a>
+                <a href=""><i class="fab fa-facebook-f icon"></i></a>
+                <a href=""><i class="fab fa-twitter icon"></i></a>
+                <i class="fas fa-search icon"></i>
+            </div>
+        </div>
+        <div class="navLinks">
+            <a href="index.html" class="selected">Home</a>
+            <a href="" >Parents</a>
+            <a href="" >About Us</a>
+            <a href="" >News & Events</a>
+            <a href="" >Key Documents</a>
+            <a href="" >Vacancies</a>
+            <a href="" >Curriculum</a>
+            <a href="" >Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <h3>Evosite example website</h3>
+        <h1>Donec congue metus quis est</h1>
+        <a href="#welcome"><i class="fas fa-arrow-down"></i></a>
+    </header>
+
+    <section id="welcome" class="container">
+        <div class="wrapper">
+            <img src="assets/images/IMG_5042.png" alt="stock image" />
+            <div>
+                <h5>Welcome to</h5>
+                <h4>The example Evosite website</h4>
+                <p>
+                    Donec congue metus quis est commodo, eget condimentum
+                    turpis rhoncus. Fusce dictum nibh nec nisi lacinia tincidunt
+                    et quis ex. Nunc turpis enim, interdum vitae neque vitae,
+                    sollicitudin tempus purus. Praesent sed leo in arcu
+                    tincidunt vestibulum.
+                </p>
+                <p><b>Joe Bloggs</b> - Managing Director</p>
+            </div>
+        </div>
+        <a href="" class="button buttonDarkTheme">Read more</a>
+    </section>
+
+    <section class="news">
+        <div class="newsHeader container">
+            <h2>Latest News</h2>
+            <div class="carouselControls">
+                <i class="fas fa-arrow-circle-left" id="carouselLeft"></i>
+                <i class="fas fa-arrow-circle-right" id="carouselRight"></i>
+            </div>
+        </div>
+        <aside class="container">
+            <article id="1" data-pos="l" class="animate__animated">
+                <div class="carouselBanner">
+                    <img src="assets/images/news1.png" alt="news1"/>
+                    <h4>Featured news / category</h4>
+                </div>
+                <div class="carouselDetails">
+                    <h5>March 20th 20xx</h5>
+                    <h3>This is an example of a really long heading that needs to span over multiple lines</h3>
+                </div>
+            </article>
+            <article id="2" data-pos="r" class="animate__animated">
+                <div class="carouselBanner">
+                    <img src="assets/images/news2.png" alt="news2"/>
+                    <h4>Featured news / category</h4>
+                </div>
+                <div class="carouselDetails">
+                    <h5>March 20th 20xx</h5>
+                    <h3>This is an example of a really long heading that needs to span over multiple lines</h3>
+                </div>
+            </article>
+            <article id="3" data-pos="h" class="animate__animated hidden">
+                <div class="carouselBanner">
+                    <img src="assets/images/IMG_5042.png" alt="news3"/>
+                    <h4>Featured news / category</h4>
+                </div>
+                <div class="carouselDetails">
+                    <h5>March 20th 20xx</h5>
+                    <h3>This is an example of a really long heading that needs to span over multiple lines</h3>
+                </div>
+            </article>
+            <article id="clone1" data-pos="h" class="animate__animated hidden">
+                <div class="carouselBanner">
+                    <img src="assets/images/news1.png" alt="news1"/>
+                    <h4>Featured news / category</h4>
+                </div>
+                <div class="carouselDetails">
+                    <h5>March 20th 20xx</h5>
+                    <h3>This is an example of a really long heading that needs to span over multiple lines</h3>
+                </div>
+            </article>
+        </aside>
+
+        <a class="button buttonLightTheme" href="#">View all news</a>
+    </section>
+
+    <footer>
+        <div class="container">
+            <img src="assets/Logo.png" alt="logo" />
+            <hr>
+            <section>
+                <div>
+                    <p>Managing Director - Joe Bloggs</p>
+                    <p>Evosite Example Site</p>
+                    <p>Viney Court, Taunton</p>
+                    <p>Somerset TA1 3FB</p>
+                </div>
+                <div>
+                    <a href="tel:+441823470100"><i class="fas fa-phone fa-flip-horizontal"></i> 01823 470 100</a>
+                    <a href="mailto:"><i class="fas fa-envelope"></i> Email us</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i> Get Directions</a>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Quick Link One</a></li>
+                        <li><a href="">Quick Link Two</a></li>
+                        <li><a href="">Quick Link Three</a></li>
+                        <li><a href="">Quick Link Four</a></li>
+                        <li><a href="">Quick Link Five</a></li>
+                        <li><a href="">Quick Link Six</a></li>
+                        <li><a href="">Quick Link Seven</a></li>
+                        <li><a href="">Quick Link Eight</a></li>
+                        <li><a href="">Quick Link Nine</a></li>
+                    </ul>
+                </div>
+            </section>
+            <hr>
+            <p>&copy Evosite Example Site - Registered Company Number - 01234567</p>
+            <div class="footNote">
+                <div>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Cookie Usage</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">High Visibility Version</a>
+                </div>
+                <p>Website Design by Evosite</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
